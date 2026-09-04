@@ -24,34 +24,7 @@ jobs:
       discussions: write
       models: read
     steps:
-      - uses: benbalter/ai-community-moderator@v1
+      - name: Moderate community content
+        uses: benbalter/ai-community-moderator@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}name: AI Community Moderator
-
-on:
-  issues:
-    types: [opened]
-  pull_request:
-    types: [opened]
-  issue_comment:
-    types: [created]
-  pull_request_review_comment:
-    types: [created]
-  discussion:
-    types: [created]
-  discussion_comment:
-    types: [created]
-
-jobs:
-  moderate:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      issues: write
-      pull-requests: write
-      discussions: write
-      models: read
-    steps:
-      - uses: benbalter/ai-community-moderator@v1
-        with:
-          github-token: ${{ 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 }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
