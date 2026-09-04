@@ -20,7 +20,7 @@ By participating, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md) 
 - Update documentation when installation, behavior, compatibility, or the catalog format changes.
 - Preserve attribution and include the license for third-party work.
 
-For add-on submissions and updates, follow every requirement in [Publishing Add-ons](PUBLISHING_ADDONS.md).
+Only Python (**.py**) and Ruby (**.rb**) add-ons for The Cube Beta are accepted. For add-on submissions and updates, follow every requirement in [Publishing Add-ons](PUBLISHING_ADDONS.md).
 
 ## Pull requests
 

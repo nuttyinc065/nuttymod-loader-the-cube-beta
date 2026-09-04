@@ -2,6 +2,8 @@
 
 The mod loader and add-on catalog for [The Cube Beta](https://github.com/nuttyinc578/the-cube).
 
+This catalog accepts The Cube Beta add-ons written as Python (**.py**) or Ruby (**.rb**) source files.
+
 Thank you to [nuttyinc578](https://github.com/nuttyinc578) for permission to create this mod loader.
 
 ## Community and contributing

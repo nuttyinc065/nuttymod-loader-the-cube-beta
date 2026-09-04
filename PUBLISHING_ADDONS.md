@@ -1,6 +1,8 @@
 # Publishing Add-ons
 
-This repository is a community catalog. Every published add-on must be safe to distribute, honestly described, and organized so the loader can find it.
+This repository is the community add-on catalog for The Cube Beta. It accepts add-ons written in Python (**.py**) or Ruby (**.rb**). Every published add-on must be safe to distribute, honestly described, and organized so the loader can find it.
+
+Add-ons for other games or projects do not belong in this catalog.
 
 ## Before you submit
 
@@ -9,6 +11,7 @@ You must:
 - own the add-on or have permission to publish every included file;
 - comply with the add-on's dependencies and third-party licenses;
 - test the add-on with the current version of The Cube Beta and state any known limitations;
+- submit the add-on as a readable Python (**.py**) or Ruby (**.rb**) source file;
 - scan the package for malware and remove secrets, personal data, debug dumps, and unrelated files; and
 - choose a unique, stable slug made from lowercase letters, numbers, and hyphens, such as **better-jumping**.
 
@@ -18,6 +21,8 @@ Do not submit add-ons that:
 - impersonate another creator or reuse work without permission and attribution;
 - enable harassment, cheating in competitive play, or abuse of other people or services;
 - include pirated, paid, leaked, or copyrighted game assets that you are not allowed to redistribute;
+- use archives, executables, compiled binaries, or file types other than **.py** and **.rb** as the catalog entry;
+- hide behavior through deliberate obfuscation or unreadable generated code;
 - are intentionally misleading about their purpose or behavior; or
 - require users to weaken normal security protections without a clear, legitimate reason.
 
@@ -27,13 +32,17 @@ Maintainers may reject or remove an add-on that creates a safety, legal, compati
 
 Place each release in:
 
-    addons/packages/<slug>/<version-with-dashes>/<package-file>
+    addons/packages/<slug>/<version-with-dashes>/<addon-file>.py
 
-For example, version **1.2.0** of **better-jumping** could be stored at:
+or:
+
+    addons/packages/<slug>/<version-with-dashes>/<addon-file>.rb
+
+For example, version **1.2.0** of a Python add-on named **better-jumping** could be stored at:
 
     addons/packages/better-jumping/1-2-0/better_jumping.py
 
-Use a new version directory for every release. Never replace the contents of an already published version. Keep packages as small as practical. Archives must be self-contained and use a common format such as .zip or .7z; do not use password-protected archives.
+The Ruby equivalent would end in **.rb**. Use a new version directory for every release, and never replace the contents of an already published version. Keep packages as small as practical. Do not submit ZIP, 7z, or other archives.
 
 ## Catalog entry
 
@@ -54,7 +63,7 @@ Requirements:
 - **description** plainly explains what the add-on does.
 - **version** follows semantic versioning (MAJOR.MINOR.PATCH).
 - **author** identifies the creator or publishing team.
-- **filePath** is a repository-relative path using / and points to the submitted file exactly, including letter case.
+- **filePath** is a repository-relative path using /, points to the submitted file exactly (including letter case), and ends in **.py** or **.rb**.
 - **submittedAt** is an ISO 8601 UTC timestamp for this catalog submission.
 - The JSON is valid and contains no comments or trailing commas.
 
@@ -65,7 +74,7 @@ In the pull request, include:
 - a summary of the add-on and its user-visible behavior;
 - the tested game and loader versions;
 - installation, use, and removal instructions;
-- source code or a link to the source when practical;
+- readable Python or Ruby source code with its purpose documented;
 - required runtimes, libraries, network access, permissions, or other dependencies;
 - the license and attribution for included third-party material;
 - screenshots or logs when they help reviewers verify the change; and
