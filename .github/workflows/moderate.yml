@@ -27,4 +27,6 @@ jobs:
       - name: Moderate community content
         uses: benbalter/ai-community-moderator@v1
         with:
+          severity-threshold: 5
+          model: openai/gpt-4.1
           github-token: ${{ secrets.GITHUB_TOKEN }}
