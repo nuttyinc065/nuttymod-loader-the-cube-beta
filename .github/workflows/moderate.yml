@@ -54,4 +54,4 @@ jobs:
     steps:
       - uses: benbalter/ai-community-moderator@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ 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 }}
