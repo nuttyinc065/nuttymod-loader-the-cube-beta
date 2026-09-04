@@ -48,6 +48,13 @@ Do not use public issues for suspected vulnerabilities, malicious packages, hara
 
 ## Review and acceptance
 
+## spacal thanks to
+@nuttyinc578 for permmisson and creating
+@codex for making the project better
+@nuttyinc065 posting and owner
+@github for making the secuirty stuff for every one that make projects
+@you for playing publishing
+
 Maintainers decide whether a contribution fits the project and may request changes. Reviews consider safety, legality, clarity, compatibility, maintainability, and community impact. All required checks and review conversations must be complete before merge.
 
 Unless stated otherwise, contributions to this repository are provided under the repository's [MIT License](LICENSE). You confirm that you have the right to submit your contribution under those terms.
