@@ -25,7 +25,7 @@ jobs:
       models: read
     steps:
       - name: Moderate community content
-        uses: benbalter/ai-community-moderator@v1
+        uses: benbalter/ai-community-moderator@3a78a096d49eb44c5a1d6baabecf98613e2d0f53 # main, 2026-09-03
         with:
           severity-threshold: 5
           model: openai/gpt-4.1
